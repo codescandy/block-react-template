@@ -1,7 +1,16 @@
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+
 @at-root {
   :root {
     --swiper-theme-color: #{var(--#{$prefix}primary)};
   }
+}
+.swiper-wrapper {
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 .swiper-pagination-bullet {
   width: 10px;

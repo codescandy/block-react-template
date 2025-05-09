@@ -1,7 +1,7 @@
-@import "../../../../node_modules/bootstrap/scss/functions";
-@import "../../../../node_modules/bootstrap/scss/maps";
-@import "../../../../node_modules/bootstrap/scss/mixins";
-@import "../../../../node_modules/bootstrap/scss/utilities";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
 
 $utilities: (
   "border": (
@@ -305,4 +305,4 @@ $utilities: (
 @import "./utilities/border";
 @import "./utilities/background";
 
-@import "../../../../node_modules/bootstrap/scss/utilities/api";
+@import "bootstrap/scss/utilities/api";

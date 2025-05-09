@@ -1,10 +1,16 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import logo from '../../assets/images/logo/logo.svg';
 
 function AppNavbar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+    <Navbar className='navbar navbar-light'  expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#">MyReactApp</Navbar.Brand>
+        <Navbar.Brand href="#"> <img
+            src={logo}
+            alt="Brand Logo"
+            height="30"
+            className="d-inline-block align-top"
+          /></Navbar.Brand>
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto">
