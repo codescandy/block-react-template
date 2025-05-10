@@ -6,6 +6,7 @@ import ClientLogoSwiper from './components/common/ClientLogoSwiper';
 import Features from './components/common/Features';
 import FeaturesList from './components/common/FeaturesList';
 import Community from './components/common/Community';
+import Price from './components/common/Price';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       <Features />
       <FeaturesList />
       <Community />
+      <Price />
     </>
   );
 };

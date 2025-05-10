@@ -105,7 +105,7 @@ const Community = () => {
               </Card>
             </Col>
           ))}
-           <Col xs={12} className="text-center">
+           <Col xs={12} className="text-center d-flex flex-row justify-content-center gap-3">
            <Link to={'/contact'}>
               <Button variant="primary">Talk to sales</Button>
             </Link>

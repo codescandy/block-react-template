@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Free",
+    "description": "Everything you need to supercharge your productivity.",
+     "monthlyPrice": 0,
+    "yearlyPrice": 0,
+    "duration": "month",
+    "features": [
+      "Feature 1 description",
+      "Feature 2 description"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Pro",
+    "description": "Advanced tools for growing teams and businesses.",
+     "monthlyPrice": 29,
+    "yearlyPrice": 49,
+    "duration": "month",
+    "features": [
+      "Unlimited projects",
+      "Priority support",
+      "Advanced analytics"
+    ]
+  }
+]
