@@ -44,44 +44,45 @@ const Price: React.FC = () => {
         <Row className="justify-content-center">
           <Col lg={8} xs={12}>
             <Row className="align-items-center g-md-0 gy-4">
-              {pricingPlans.map((plan) => (
-                <Col md={6} xs={12} key={plan.id} data-cue="slideInLeft">
-                  <Card className="bg-light pricing rounded-end-md-0">
-                    <Card.Body className="d-flex flex-column gap-4">
-                      <div>
-                        <h3>{plan.title}</h3>
-                        <p className="mb-0">{plan.description}</p>
-                      </div>
-                      <h2 className="mb-0 d-flex align-items-center">
-                        <span>${plan.price}</span>
-                        <span className="price-duration fs-6 text-body ms-2">/{plan.duration}</span>
-                      </h2>
-                      <hr className="my-0" />
-                      <div>
-                        <h5 className="mb-3">What’s included</h5>
-                        <ul className="list-unstyled flex-column d-flex gap-2">
-                          {plan.features.map((feature, index) => (
-                            <li className="d-flex align-items-start" key={index}>
-                              <span>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="16"
-                                  height="16"
-                                  fill="currentColor"
-                                  viewBox="0 0 16 16"
-                                >
-                                  <path d="M13.485 1.929a.75.75 0 0 1 0 1.06L6.03 10.445 2.515 6.93a.75.75 0 1 1 1.06-1.06l2.455 2.454 6.396-6.395a.75.75 0 0 1 1.06 0Z" />
-                                </svg>
-                              </span>
-                              <span className="ms-2">{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
+            {pricingPlans.map((plan) => (
+  <Col md={6} xs={12} key={plan.id} data-cue="slideInLeft">
+    <Card className="bg-light pricing rounded-end-md-0">
+      <Card.Body className="d-flex flex-column gap-4">
+        <div>
+          <h3>{plan.title}</h3>
+          <p className="mb-0">{plan.description}</p>
+        </div>
+        <h2 className="mb-0 d-flex align-items-center">
+          <span>${isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
+          <span className="price-duration fs-6 text-body ms-2">/{isYearly ? "yr" : "mo"}</span>
+        </h2>
+        <hr className="my-0" />
+        <div>
+          <h5 className="mb-3">What’s included</h5>
+          <ul className="list-unstyled flex-column d-flex gap-2">
+            {plan.features.map((feature, index) => (
+              <li className="d-flex align-items-start" key={index}>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M13.485 1.929a.75.75 0 0 1 0 1.06L6.03 10.445 2.515 6.93a.75.75 0 1 1 1.06-1.06l2.455 2.454 6.396-6.395a.75.75 0 0 1 1.06 0Z" />
+                  </svg>
+                </span>
+                <span className="ms-2">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Card.Body>
+    </Card>
+  </Col>
+))}
+
             </Row>
           </Col>
         </Row>
