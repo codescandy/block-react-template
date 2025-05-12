@@ -10,7 +10,7 @@ const Price: React.FC = () => {
   };
 
   return (
-    <section className="py-lg-8 py-5 price-wrapper" data-cue="fadeIn">
+    <section className="py-lg-8 py-5 price-wrapper" >
       <Container>
         <Row className="justify-content-center mb-8">
           <Col xl={6} lg={10} xs={12}>
@@ -45,7 +45,7 @@ const Price: React.FC = () => {
           <Col lg={8} xs={12}>
             <Row className="align-items-center g-md-0 gy-4">
             {pricingPlans.map((plan) => (
-  <Col md={6} xs={12} key={plan.id} data-cue="slideInLeft">
+  <Col md={6} xs={12} key={plan.id} >
     <Card className="bg-light pricing rounded-end-md-0">
       <Card.Body className="d-flex flex-column gap-4">
         <div>

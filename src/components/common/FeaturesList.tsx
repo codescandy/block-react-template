@@ -40,7 +40,7 @@ const SyncIcon = () => (
 
 const FeaturesList: React.FC = () => {
   return (
-    <section className="py-lg-8 py-5" data-cue="fadeIn">
+    <section className="py-lg-8 py-5" >
       <Container>
         {/* Title Section */}
         <Row className="mb-8">
@@ -85,7 +85,7 @@ const FeaturesList: React.FC = () => {
     image: changelogImage
   }
 ].map((item, idx) => (
-            <Col lg={4} key={idx} data-cue="zoomIn">
+            <Col lg={4} key={idx} >
               <Card className="overflow-hidden card-lift h-100">
                 <Card.Body className="me-xl-8">
                   <h4>{item.title}</h4>
@@ -123,7 +123,7 @@ const FeaturesList: React.FC = () => {
             icon: <SecureIcon />
           }
           ].map((item, idx) => (
-            <Col key={idx} data-cue="zoomIn" data-duration="1500">
+            <Col key={idx}  data-duration="1500">
               <Card className="h-100">
                 <Card.Body>
                   <div className="d-flex">
