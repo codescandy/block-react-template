@@ -7,9 +7,12 @@
     "yearlyPrice": 0,
     "duration": "month",
     "features": [
-      "Feature 1 description",
-      "Feature 2 description"
-    ]
+      "Calculator, Quicklinks, Snippets, Window Management, and many more core features",
+      "More than 1000 Extensions",
+      "Custom Extensions",
+      "Developer Tools"
+    ],
+    "btnText": "Start with Free"
   },
   {
     "id": 2,
@@ -19,9 +22,15 @@
     "yearlyPrice": 49,
     "duration": "month",
     "features": [
-      "Unlimited projects",
-      "Priority support",
-      "Advanced analytics"
-    ]
+      "Everything in Free",
+      "Block AI Features",
+      "Cloud Sync",
+      "Custom Themes",
+      "Unlimited Clipboard History",
+      "More Coming Soon"
+
+
+    ],
+     "btnText": "Sleact Plan"
   }
 ]

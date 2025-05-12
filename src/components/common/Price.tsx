@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import pricingPlans from "../../data/pricingPlans.json";
 
 const Price: React.FC = () => {
@@ -8,6 +8,9 @@ const Price: React.FC = () => {
   const togglePricing = () => {
     setIsYearly((prev) => !prev);
   };
+  const getCardClasses = (title: string) =>
+  `pricing  ${title === "Pro" ? "bg-primary text-white rounded-md" : "bg-light rounded-end-md-0"}`;
+
 
   return (
     <section className="py-lg-8 py-5 price-wrapper" >
@@ -46,19 +49,21 @@ const Price: React.FC = () => {
             <Row className="align-items-center g-md-0 gy-4">
             {pricingPlans.map((plan) => (
   <Col md={6} xs={12} key={plan.id} >
-    <Card className="bg-light pricing rounded-end-md-0">
+    <Card className={getCardClasses(plan.title)}>
       <Card.Body className="d-flex flex-column gap-4">
         <div>
-          <h3>{plan.title}</h3>
+           <h3 className={`mb-0 ${plan.title === "Pro" ? "text-white" : ""}`}>
+        {plan.title}
+      </h3>
           <p className="mb-0">{plan.description}</p>
         </div>
-        <h2 className="mb-0 d-flex align-items-center">
+        <h2 className={`mb-0 ${plan.title === "Pro" ? "text-white" : ""} mb-0 d-flex align-items-center`}>
           <span>${isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
-          <span className="price-duration fs-6 text-body ms-2">/{isYearly ? "yr" : "mo"}</span>
+          <span className={`mb-0 ${plan.duration === "Pro" ? "text-white" : ""}price-duration fs-6 ms-2`}>/{isYearly ? "yr" : "mo"}</span>
         </h2>
         <hr className="my-0" />
         <div>
-          <h5 className="mb-3">What’s included</h5>
+          <h5 className={`mb-0 ${plan.title === "Pro" ? "text-white" : ""} mb-3`}>What’s included</h5>
           <ul className="list-unstyled flex-column d-flex gap-2">
             {plan.features.map((feature, index) => (
               <li className="d-flex align-items-start" key={index}>
@@ -77,6 +82,10 @@ const Price: React.FC = () => {
               </li>
             ))}
           </ul>
+        </div>
+         {/* 👉 Plan Button */}
+        <div>
+          <Button  variant={plan.title === "Pro" ? "dark" : "primary"} className="btn btn-primary w-100">{plan.btnText}</Button>
         </div>
       </Card.Body>
     </Card>

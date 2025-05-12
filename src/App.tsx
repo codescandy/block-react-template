@@ -7,6 +7,8 @@ import Features from './components/common/Features';
 import FeaturesList from './components/common/FeaturesList';
 import Community from './components/common/Community';
 import Price from './components/common/Price';
+import CalltoAction from './components/common/CalltoAction';
+import Footer from './components/common/Footer';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +21,9 @@ const App: React.FC = () => {
       <FeaturesList />
       <Community />
       <Price />
+      <CalltoAction />
+      <Footer />
+      
     </>
   );
 };
