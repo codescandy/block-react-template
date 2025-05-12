@@ -29,7 +29,7 @@ const Footer = () => {
               {/* Service */}
               <div className="col-lg-3 col-12 mb-4">
                 <div className="position-relative">
-                  <div className="d-flex justify-content-between border-bottom pb-2 mb-0 mb-lg-4">
+                  <div className="d-flex justify-content-between border-bottom border-bottom-lg-0  pb-2 mb-0 mb-lg-4">
                     <h4>Service</h4>
                     <button className="d-lg-none btn p-0 border-0" onClick={() => toggleCollapse("service")}>
                       {collapse.service ? <BiChevronUp /> : <BiChevronDown />}
@@ -53,7 +53,7 @@ const Footer = () => {
               
               <div className="col-lg-3 col-12 mb-4">
                 <div className="position-relative">
-                 <div className="d-flex justify-content-between border-bottom pb-2 mb-0 mb-lg-4">
+                 <div className="d-flex justify-content-between border-bottom border-bottom-lg-0 pb-2 mb-0 mb-lg-4">
                     <h4>About us</h4>
                     
                     <button className="d-lg-none btn p-0 border-0" onClick={() => toggleCollapse("about")}>
@@ -78,7 +78,7 @@ const Footer = () => {
               {/* Technology */}
               <div className="col-lg-3 col-12 mb-4">
                 <div className="position-relative">
-                 <div className="d-flex justify-content-between border-bottom pb-2 mb-0 mb-lg-4">
+                 <div className="d-flex justify-content-between border-bottom border-bottom-lg-0 pb-2 mb-0 mb-lg-4">
                     <h4>Technology</h4>
                     <button className="d-lg-none btn p-0 border-0" onClick={() => toggleCollapse("tech")}>
                       {collapse.tech ? <BiChevronUp /> : <BiChevronDown />}
@@ -101,7 +101,7 @@ const Footer = () => {
               {/* Locations */}
               <div className="col-lg-3 col-12 mb-4">
                 <div className="position-relative">
-                 <div className="d-flex justify-content-between border-bottom pb-2 mb-0 mb-lg-4">
+                 <div className="d-flex justify-content-between border-bottom border-bottom-lg-0 pb-2 mb-0 mb-lg-4">
                     <h4>Locations</h4>
                     <button className="d-lg-none btn p-0 border-0" onClick={() => toggleCollapse("locations")}>
                       {collapse.locations ? <BiChevronUp /> : <BiChevronDown />}
