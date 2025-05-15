@@ -1,0 +1,22 @@
+[
+  {
+    "key": "service",
+    "title": "Service",
+    "links": ["Web App Development", "Front End Development", "MVP Development", "Digital Marketing", "Content Writing"]
+  },
+  {
+    "key": "about",
+    "title": "About us",
+    "links": ["Case Studies", "Blog", "Services", "About", "Career"]
+  },
+  {
+    "key": "tech",
+    "title": "Technology",
+    "links": ["Next.js", "Sanity", "Contentful", "Vercel", "Netlify"]
+  },
+  {
+    "key": "locations",
+    "title": "Locations",
+    "links": ["India", "Australia", "Brazil", "Canada"]
+  }
+]
